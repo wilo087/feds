@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:14.1-alpine
+    container_name: feeds-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: feeds
+    volumes:
+      - ./docker/db:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    command: [ "postgres" ]
+  nats:
+    image: "nats-streaming:0.9.2"
+    container_name: feeds-nats
+ 
