@@ -5,7 +5,7 @@ import (
 	"database/sql"
 
 	_ "github.com/lib/pq"
-	"github.com/wilo087/feds.git/models"
+	"github.com/wilo087/feeds/models"
 )
 
 type PostgresRepository struct {

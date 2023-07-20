@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/wilo087/feds.git/models"
+	"github.com/wilo087/feeds/models"
 )
 
 type Repository interface {

@@ -12,6 +12,6 @@ type CreatedFeedMessage struct {
 	UpdatedAt   string `json:"updated_at"`
 }
 
-func (m *CreatedFeedMessage) Type() string {
+func (m CreatedFeedMessage) Type() string {
 	return "feed.created"
 }

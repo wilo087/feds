@@ -1,4 +1,4 @@
-module github.com/wilo087/feds.git
+module github.com/wilo087/feeds
 
 go 1.20
 
